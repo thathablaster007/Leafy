@@ -1,0 +1,303 @@
+
+.flex-container{
+    display:flex;
+}
+.Footer.flex-container{
+    display:flex;
+}
+.anchors{
+    flex:0.5;
+    text-align: left;
+}
+
+.Logo{
+    flex:4;
+    text-align: center;
+}
+.Refrences{
+    flex:0.5;
+    text-align: right;
+}
+
+.copywrite{
+    flex:0.5;
+    text-align: center;
+    position: relative;
+    top: 60px;
+}
+
+img{
+    width: 200px;
+    height: 118px;
+}
+.anchors{
+    padding-left: 120px;
+}
+.anchors > a{
+    position: relative;
+    top:60px;
+    padding-left: 15px;
+    font-family: "Quicksand";
+    font-size: large;
+}
+.Refrences{
+    padding-right: 120px;
+}
+.Refrences > a{
+    position: relative;
+    top:60px;
+    padding-right: 40px;
+    font-family: "Quicksand";
+    font-size: large;
+}
+
+a:link {
+    color: #7F886B;
+}
+  
+a:visited {
+    color: #7F886B;
+  }
+
+.bi{
+    font-size: 1.5rem;
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+}
+
+footer{
+    background-color: #0dcaf0;
+    height: 250px;
+}
+
+.FooterImg{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    position: relative;
+    top: 60px;
+}
+
+.anchors.cont{
+    flex: 0.5;
+    text-align: center;
+}
+.anchors.cont{
+    padding-right: 10px;
+}
+.anchors.cont > a{
+    position: relative;
+    top:100px;
+    padding-right: 15px;
+    font-family: "Quicksand";
+    font-size: large;
+}
+
+.Home.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px 700px 100px 800px;
+}
+
+.Microgreens{
+    grid-column: span 2;
+    text-align: center;
+}
+.Microgreens > h1{
+    position: relative; 
+    top:100px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 300%;
+}
+
+.Microgreens>p{
+    position: relative;
+    font-family: "Quicksand";
+    font-size: large;
+    top: 130px;
+}
+
+.Microgreens .btn{
+    position: relative;
+    top:150px;
+    width:300px;
+    height: 75px;
+    font-size: larger;
+}
+
+.MicrogreensPicture{
+    grid-column: span 2;
+}
+
+.HomePagePic{
+    width: 100%;
+    height: 400px;
+}
+
+.first{
+    text-align: center;
+    flex: 1;
+    height: 70px;
+    background-color: #E3F2FD;
+    margin-right: 5px;
+}
+.first>p{
+    position: relative;
+    top:20px;
+    color: #0dcaf0;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: larger;
+}
+.Second>p{
+    position: relative;
+    top:20px;
+    color: #0dcaf0;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: larger;
+}
+.Second{
+    text-align: center;
+    flex:2;
+    height: 70px;
+    background-color: #E3F2FD;
+}
+.Third{
+    text-align: center;
+    flex: 1;
+    height: 70px;
+    background-color: #E3F2FD;
+    margin-left: 5px;
+}
+.Third>p{
+    position: relative;
+    top:20px;
+    color: #0dcaf0;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: larger;
+}
+
+.LocalMicrogreens{
+    grid-column: span 2;
+}
+
+.LocalMicrogreens > h1{
+    position: relative; 
+    top: 125px;
+    padding-left: 100px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.LocalMicrogreens>p{
+    position: relative;
+    font-family: "Quicksand";
+    font-size: larger;
+    top:135px;
+    padding-left:100px;
+}
+
+.P2{
+    top:10px;
+}
+
+div.scroll-container {
+    display: flex;
+    overflow: hidden; /* Hide scrollbar */
+    white-space: nowrap;
+    padding: 10px;
+    position: relative;
+    top:150px;
+    scroll-behavior: smooth;
+    width: 92%;
+    margin: 0 auto;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+  }
+
+.rounded-border{
+    grid-column: span 2;
+    background-color: #A7D7C5;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+
+.WhatMicrogreens1{
+    background-color: #A7D7C5;
+    text-align: justify;
+}
+.WhatMicrogreens2{
+    background-color: #A7D7C5;
+}
+
+.collage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px;
+}
+
+.Image1>img{
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.Image2>img{
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+    top: 100px;
+    width: 75%;
+    height: 75%;
+}
+.Image3>img{
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    left: 80px;
+}
+.Image4>img{
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+.WhatMicrogreens1>h1{
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 250%;
+    position: relative;
+    top: 130px;
+    padding-left: 50px;
+}
+
+.WhatMicrogreens1>p{
+    font-family: "Quicksand";
+    font-size: larger;
+    position: relative;
+    top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.WhatMicrogreens1>ul>li{
+    font-family: "Quicksand";
+    font-size: larger;
+    position: relative;
+    top: 160px;
+    padding-left: 50px;
+}
