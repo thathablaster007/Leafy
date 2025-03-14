@@ -1,0 +1,89 @@
+/* General Form Styles */
+.flexbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 650px;
+}
+
+.container {
+    width: 400px;
+    background: #fff;
+    padding: 10px;
+    font-family: "Quicksand";
+    font-size: large;
+}
+
+/* Labels */
+.container label {
+    color: #7F886B;
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* Input Fields */
+.container input,
+.container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* First Name & Last Name (side by side) */
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input {
+    flex: 1;
+}
+
+/* Submit Button */
+.container button {
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: "Quicksand";
+    font-size: large;
+}
+
+.ContactInfo>h1{
+    font-family: 'Playfair Display';
+    font-weight:bold;
+    font-size: 300%;
+    position: relative;
+    top: 50px;
+    padding-left: 150px;
+}
+
+.heading{
+    font-family: 'Quicksand';
+    font-weight:bold;
+    font-size: 120%;
+    position: relative;
+    top: 70px;
+    padding-left: 150px;
+}
+
+.ContactInfo>p{
+    font-family: 'Quicksand';
+    position: relative;
+    top: 80px;
+    padding-left: 150px;
+}
+
+.Icon{
+    position: relative;
+    top: 95px;
+    padding-left: 150px;
+}
+.Icon2{
+    position: relative;
+    top: 95px;
+}
+

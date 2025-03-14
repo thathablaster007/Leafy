@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href = "ContactStyle.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
@@ -28,6 +29,35 @@
             </div>
         </div>
 
+        <div class="flexbox">
+            <div class="ContactInfo">
+                <h1>We Would Love To Hear From You</h1>
+                <p class = 'heading'>Leafy Nibbles</p>
+                <p>Locally Grown in Mysore, Karnataka</p>
+                <a class='Icon' href = "https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                <a class='Icon2' href = 'https://www.facebook.com/'><i class="bi bi-facebook"></i></a>
+            </div>
+            <div class="container">
+                <form id="contactForm">
+                    <label for="firstName">Name <span class="required">(required)</span></label>
+                    <div class="name-fields">
+                        <input type="text" id="firstName" name="firstName" placeholder="" required>
+                        <input type="text" id="lastName" name="lastName" placeholder="">
+                    </div>
+        
+                    <label for="email">Email <span class="required">(required)</span></label>
+                    <input type="email" id="email" name="email" placeholder="" required>
+        
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="">
+        
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="" rows="4"></textarea>
+        
+                    <button type="submit" class="btn btn-info rounded-0">Submit</button>
+                </form>
+            </div>
+        </div>
         
 
         <footer>
@@ -49,5 +79,6 @@
                 </div>
             </div>
         </footer>
+        <script src = 'ContactScript.js'></script>
     </body>
 </html>
