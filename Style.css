@@ -490,7 +490,7 @@ body {
     display: flex;
     gap: 2rem;
     flex: 2;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
