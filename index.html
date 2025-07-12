@@ -13,91 +13,200 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
-        <div class="NavBar flex-container">
-            <div class = "anchors">
-                <div class = 'About'><a href="About.html">About</a></div>
-                <div class = 'Blog'><a href="Blog.html">Blog</a></div>
-                <div class = 'Contact'><a href="Contact.html">Contact</a></div>
+        <nav class="NavBar">
+  <!-- Left: Nav Links -->
+            <div class="nav-left">
+                <a href="About.html">About</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Contact.html">Contact</a>
             </div>
-            <div class = 'Logo'>
-                <a href="index.html"><img src="Logo.jpeg"></a>
+
+  <!-- Center: Logo -->
+            <div class="logo">
+                <a href="index.html">
+                <img src="Leafy_Logo.jpg" alt="Leafy Nibbles Logo" />
+                </a>
             </div>
-            <div class = 'Refrences'>
-                <div class = 'Instagram-button'><a href = "https://www.instagram.com/"><i class="bi bi-instagram"></i></a></div>
-                <div class = 'Facebook-button'><a href = 'https://www.facebook.com/'><i class="bi bi-facebook"></i></a></div>
-                <div class = 'Shop-button'><a href="Products.html"><button>Shop Now</button></a></div>
+
+  <!-- Right: Socials + Shop -->
+            <div class="nav-right">
+                <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                <a href="Products.html" class="shop-btn">Shop Now</a>
             </div>
-        </div>
+        </nav>
         <div class="Home grid-container">
-            <div class="Microgreens">
-                <div class = 'title'><h1>Nature’s Flavour Packed in Mini</h1></div>
-                <div class = 'Paragraph'><p>The tiny nutrient powerhouses to supercharge your diet 
-                    with essential nutrients and antioxidants.</p></div>
-                <div class = 'Submit'><a href="Products.html"><button>Shop Microgreens</button></a></div>
-            </div>
-            <div class = 'MicrogreensPicture'>
-                <div class="Main-scroll-container">
-                    <img src="Scroll/Image1.jpeg" alt="Image1">
-                    <img src="Scroll/Image2.jpeg" alt="Image2">
-                    <img src="Scroll/Image3.jpeg" alt="Image3">
-                    <img src="Scroll/Image4.jpeg" alt="Image4">
-                    <img src="Scroll/Image5.jpeg" alt="Image5">
-                    <img src="Scroll/Image6.jpeg" alt="Image6">
-                    <img src="Scroll/Image7.jpeg" alt="Image7">
-                    <img src="Scroll/Image8.jpeg" alt="Image8">
-                </div>
-                <div class="Picture-flex-container">
-                    <div class = 'first'><p>PESTICIDE FREE</p></div>
-                    <div class = 'Second'><p>HARVESTED WITHIN 24 HOURS OF DELIVERY</p></div>
-                    <div class = 'Third'><p>OVER 10 VARIETIES</p></div>
+            <div class="hero-container">
+                <div class="Microgreens">
+                    <div class="title">
+                        <h1>Nature’s Flavour Packed in Mini</h1>
+                    </div>
+                    <div class="Paragraph">
+                        <p>The tiny nutrient powerhouses to supercharge your diet 
+                        with essential nutrients and antioxidants.</p>
+                    </div>
+                    <div class="tagline">
+                        Pesticide free 
+                    </div>
                 </div>
             </div>
-            <div class="WhatMicrogreens1">
-                <div><h1>What are Microgreens?</h1></div>
-                <div><p>Microgreens are the tender young shoots of edible plants,harvested just days after germination,packed with intense flavour,vibrant colour and concentrated nutrients.These miniature greens are the perfect fusion of beauty,taste and wellness-a simple way to add freshness and vitality to every meal.
-                </p></div>
-                <div><p>There are studies that show this:</p></div>
-                <div><a href = 'Sulforaphane.html'><button>Read about Sulforaphane</button></a></div>
-            </div>
+            <section class="WhatMicrogreens1">
+                <h1>What Are Microgreens?</h1>
+                <p>
+                    Microgreens are the tender young shoots of edible plants,harvested just days after germination,packed with intense flavour,vibrant colour and concentrated nutrients.These miniature greens are the perfect fusion of beauty,taste and wellness-a simple way to add freshness and vitality to every meal.
+                    <br><br>Tiny but mighty!
+                </p>
+                <a href="Blog.html">
+                    <button class="cta-button">Read about Sulforaphane</button>
+                </a>
+            </section>
             <div class = "WhatMicrogreens2">
                 <div class = collage>
-                    <div class = 'Image1'><img src="Collage/Image1.jpeg" alt="Image1"></div>
-                    <div class = 'Image2'><img src="Collage/Image2.jpeg" alt="Image2"></div>
-                    <div class = 'Image3'><img src="Collage/Image3.jpeg" alt="Image3"></div>
-                    <div class = 'Image4'><img src="Collage/Image4.jpeg" alt="Image4"></div>
+                    <div class = 'Image1'><img src="Collage/Image_1.jpg" alt="Image1"></div>
+                    <div class = 'Image2'><img src="Collage/Image_2.jpg" alt="Image2"></div>
+                    <div class = 'Image3'><img src="Collage/Image_3.jpg" alt="Image3"></div>
+                    <div class = 'Image4'><img src="Collage/Image_4.jpg" alt="Image4"></div>
                 </div>
             </div>
             <div class="LocalMicrogreens">
-                <div><h1>Our Local Microgreens</h1></div>
-                <div><p>Embrace the freedom of improved well-being by adding these superfoods to your diet and explore how they can revolutionise your lifestyle.
-                    From our farm to your table, find us at local farmers markets or order through our contact</p></div>
+                <h1>Our Microgreens</h1>
+                <p>
+                    Embrace the freedom of improved well-being by adding these superfoods to your diet and explore how they can revolutionise your lifestyle.
+                    From our farm to your table, find us at local farmers markets or order through our contact.
+                </p>
+
+                <!-- Image Scroll Strip -->
                 <div class="scroll-container">
-                    <img src="Scroll/Image1.jpeg" alt="Image1">
-                    <img src="Scroll/Image2.jpeg" alt="Image2">
-                    <img src="Scroll/Image3.jpeg" alt="Image3">
-                    <img src="Scroll/Image4.jpeg" alt="Image4">
-                    <img src="Scroll/Image5.jpeg" alt="Image5">
-                    <img src="Scroll/Image6.jpeg" alt="Image6">
-                    <img src="Scroll/Image7.jpeg" alt="Image7">
-                    <img src="Scroll/Image8.jpeg" alt="Image8">
+                    <img src="Scroll/image2.jpg" alt="Image2">
+                    <img src="Scroll/image1.jpg" alt="Image1">
+                    <img src="Scroll/image3.jpg" alt="Image3">
+                    <img src="Scroll/image4.jpg" alt="Image4">
+                    <img src="Scroll/image5.jpg" alt="Image5">
+                    <img src="Scroll/image8.jpg" alt="image8">
+                    <img src="Scroll/image6.jpg" alt="Image6">
+                    <img src="Scroll/image7.jpg" alt="image7">
+                </div>
+
+                <!-- Arrow Controls (Below) -->
+                <div class="scroll-controls">
+                    <img class="scroll-arrow left" src="arrow_left.png" alt="Scroll Left">
+                    <img class="scroll-arrow right" src="arrow_right.png" alt="Scroll Right">
                 </div>
             </div>
-        </div>
+            <div class="TipsSection">
+                <div class="TipsIntro">
+                    <h1>
+                        We love sharing microgreen <span class="highlight">tips</span><br>and <span class="highlight">recipes</span>.
+                    </h1>
+                    <p>
+                        Dishing out secrets from our kitchen to yours, stirring up inspiration with practical tips and fuelling your wellbeing with expert advice.
+                    </p>
+                    <a href="Blog.html"><button class="read-more">Read More</button></a>
+                </div>
 
+                <div class="BlogCards">
+                    <div class="card">
+                        <a href = 'Blog.html'><img src="Blog/image1.jpg" alt="Microgreens under grow light"></a>
+                        <p>The Nutritional Powerhouse of Microgreens — A Superfood Worth Exploring</p>
+                    </div>
+                    <div class="card">
+                        <a href = 'Blog.html'><img src="Blog/image2.jpg" alt="Green pesto"></a>
+                        <p>Don't Waste Your Microgreens — Our Favorite Spicy Mircogreens Chutney Recipe</p>
+                    </div>
+                    <div class="card">
+                        <a href = 'Blog.html'><img src="Blog/image3.jpg" alt="Dog with microgreens"></a>
+                        <p>Can Dogs and Cats Eat Microgreens? A Guide to Feeding Your Furry Friends</p>
+                    </div>
+                </div>
+            </div>
+            <div class = 'icons_line'>
+                    <p>Elevate Every Dish with Microgreens</p>
+                    <div>
+                        <div>
+                            <img src = 'Icons/unnamed.png' alt = 'Icon1'>
+                            <p>Pani Puri</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (1).png' alt = 'Icon2'>
+                            <p>Burger</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (2).png' alt = 'Icon3'>
+                            <p>Curry</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (3).png' alt = 'Icon4'>
+                            <p>Eggs</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (4).png' alt = 'Icon5'>
+                            <p>Dosa</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (5).png' alt = 'Icon6'>
+                            <p>Noodles</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (6).png' alt = 'Icon7'>
+                            <p>Pizza</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (7).png' alt = 'Icon8'>
+                            <p>Sandwich</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (8).png' alt = 'Icon9'>
+                            <p>Soup</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (9).png' alt = 'Icon10'>
+                            <p>Rice</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (10).png' alt = 'Icon11'>
+                            <p>Sushi</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (11).png' alt = 'Icon12'>
+                            <p>Tacos</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (12).png' alt = 'Icon13'>
+                            <p>Dessert</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (13).png' alt = 'Icon14'>
+                            <p>Salad</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (14).png' alt = 'Icon15'>
+                            <p>Smoothie</p>
+                        </div>
+                        <div>
+                            <img src = 'Icons/unnamed (15).png' alt = 'Icon16'>
+                            <p>Stir Fry</p>
+                        </div>
+                    </div>
+            </div>
+
+
+        </div>
         <footer>
-            <div class="Footer flex-container">
-                <div class = 'copywrite'>
-                    <a href = "https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-                    <a href = 'https://www.facebook.com/'><i class="bi bi-facebook"></i></a>
-                    <br>
-                    <p>Copyright © 2025 Leafy Nibbles Microgreens</p>
-                    <p>Legal  |  Site By Neerav Aiyappa</p>
+            <div class="Footer">
+                <div class="footer-left">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                    <p>FSSAI : 21225130000185  <br>Site By Neerav Aiyappa Mukkatira</p>
                 </div>
-                <div classs = 'Logo'>
-                    <a href="index.html"><img class = 'FooterImg' src="Footer_Logo.jpg"></a>
+
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img class="FooterImg" src="Leafy_Logo.jpg" alt="Leafy Nibbles Logo">
+                    </a>
                 </div>
-                <div class = "anchors cont">
-                    <a href="Products.html">Products</a>
+
+                <div class="footer-links">
+                    <a href="Products.html">Shop</a>
                     <a href="About.html">About</a>
                     <a href="Contact.html">Contact</a>
                 </div>

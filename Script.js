@@ -1,66 +1,36 @@
 const scrollContainer = document.querySelector(".scroll-container");
+const leftArrow = document.querySelector(".scroll-arrow.left");
+const rightArrow = document.querySelector(".scroll-arrow.right");
 
-function autoScrollLeft() {
-    if (scrollContainer.scrollLeft <= 0) {
-        scrollContainer.scrollLeft = scrollContainer.scrollWidth; // Loop back to end
-    } else {
-        scrollContainer.scrollLeft -= 1; // Adjust speed (Increase for faster scroll)
-    }
-}
+// Calculate one image scroll width (with gap)
+const imageWidth = 396 + 16; // 300px width + ~1rem gap
 
-let scrollInterval = setInterval(autoScrollLeft, 20); // Adjust timing for smoothness
-
-// Pause scrolling on hover
-scrollContainer.addEventListener("mouseenter", () => {
-    clearInterval(scrollInterval);
+leftArrow.addEventListener("click", () => {
+    scrollContainer.scrollLeft -= imageWidth;
 });
 
-// Resume scrolling on mouse leave
-scrollContainer.addEventListener("mouseleave", () => {
-    scrollInterval = setInterval(autoScrollLeft, 20);
+rightArrow.addEventListener("click", () => {
+    scrollContainer.scrollLeft += imageWidth;
 });
 
-const images = document.querySelectorAll(".scroll-container img");
-images.forEach(img => {
-    const clone = img.cloneNode(true);
-    scrollContainer.appendChild(clone);
-});
+const taglines = [
+    "Pesticide Free",
+    "Nutrient Dense",
+    "Bursting with Flavour",
+    "Sustainably Grown Indoors",
+    "Freshly Harvested"
+];
 
-document.addEventListener("DOMContentLoaded", function () {
-    const scrollContainer = document.querySelector(".Main-scroll-container");
-    const imageWidth = 380; // Width of one image
-    const delay = 2000; // Pause duration (2 seconds)
-    let scrollAmount = 0;
+const taglineEl = document.querySelector(".tagline");
+let index = 0;
 
-    // Duplicate images for smooth infinite scroll
-    const images = document.querySelectorAll(".Main-scroll-container img");
-    images.forEach(img => {
-        const clone = img.cloneNode(true);
-        scrollContainer.appendChild(clone);
-    });
+setInterval(() => {
+    taglineEl.classList.add("fade-out");
 
-    function scrollImages() {
-        scrollAmount += imageWidth;
+    setTimeout(() => {
+        index = (index + 1) % taglines.length;
+        taglineEl.textContent = taglines[index];
+        taglineEl.classList.remove("fade-out");
+    }, 500); // match fade out duration
+}, 2500); // change every 5 seconds (sync with background)
 
-        if (scrollAmount >= scrollContainer.scrollWidth / 2) {
-            scrollContainer.scrollLeft = 0; // Reset scroll position
-            scrollAmount = 0;
-        }
-
-        scrollContainer.scrollTo({ left: scrollAmount, behavior: "smooth" });
-
-        setTimeout(scrollImages, delay + 1000); // 2s pause + 1s scroll
-    }
-
-    let scrollTimeout = setTimeout(scrollImages, delay); // Start after delay
-
-    // Pause scrolling on hover
-    scrollContainer.addEventListener("mouseenter", () => {
-        clearTimeout(scrollTimeout);
-    });
-
-    // Resume scrolling on mouse leave
-    scrollContainer.addEventListener("mouseleave", () => {
-        scrollTimeout = setTimeout(scrollImages, delay);
-    });
-});
