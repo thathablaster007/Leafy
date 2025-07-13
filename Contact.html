@@ -13,31 +13,34 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
-        <div class="NavBar flex-container">
-            <div class = "anchors">
-                <div class = 'About'><a href="About.html">About</a></div>
-                <div class = 'Blog'><a href="Blog.html">Blog</a></div>
-                <div class = 'Contact'><a href="Contact.html">Contact</a></div>
+        <nav class="NavBar">
+  <!-- Left: Nav Links -->
+            <div class="nav-left">
+                <a href="About.html">About</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Contact.html">Contact</a>
             </div>
-            <div class = 'Logo'>
-                <a href="index.html"><img src="Logo.jpeg"></a>
 
-                
+  <!-- Center: Logo -->
+            <div class="logo">
+                <a href="index.html">
+                <img src="Leafy_Logo.jpg" alt="Leafy Nibbles Logo" />
+                </a>
             </div>
-            <div class = 'Refrences'>
-                <div class = 'Instagram-button'><a href = "https://www.instagram.com/"><i class="bi bi-instagram"></i></a></div>
-                <div class = 'Facebook-button'><a href = 'https://www.facebook.com/'><i class="bi bi-facebook"></i></a></div>
-                <div class = 'Shop-button'><a href="Products.html"><button>Shop Now</button></a></div>
+
+  <!-- Right: Socials + Shop -->
+            <div class="nav-right">
+                <a href="https://www.instagram.com/leafynibbles.microgreens/"><i class="bi bi-instagram"></i></a>
+                <a href="Products.html" class="shop-btn">Shop Now</a>
             </div>
-        </div>
+        </nav>
 
         <div class="flexbox">
             <div class="ContactInfo">
                 <h1>We Would Love To Hear From You</h1>
                 <p class = 'heading'>Leafy Nibbles</p>
                 <p>Locally Grown in Mysore, Karnataka</p>
-                <a class='Icon' href = "https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-                <a class='Icon2' href = 'https://www.facebook.com/'><i class="bi bi-facebook"></i></a>
+                <a class='Icon' href = "https://www.instagram.com/leafynibbles.microgreens/"><i class="bi bi-instagram"></i></a>
             </div>
             <div class="container">
                 <form id="contactForm">
@@ -63,24 +66,47 @@
         
 
         <footer>
-            <div class="Footer flex-container">
-                <div class = 'copywrite'>
-                    <a href = "https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-                    <a href = 'https://www.facebook.com/'><i class="bi bi-facebook"></i></a>
-                    <br>
-                    <p>Copyright © 2025 Leafy Nibbles Microgreens</p>
-                    <p>Legal  |  Site By Neerav Aiyappa</p>
+            <div class="Footer">
+                <div class="footer-left">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/leafynibbles.microgreens/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                    <p>FSSAI : 21225130000185  <br>Site By Neerav Aiyappa Mukkatira</p>
                 </div>
-                <div classs = 'Logo'>
-                    <a href="index.html"><img class = 'FooterImg' src="Footer_Logo.jpg"></a>
+
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img class="FooterImg" src="Leafy_Logo.jpg" alt="Leafy Nibbles Logo">
+                    </a>
                 </div>
-                <div class = "anchors cont">
-                    <a href="Products.html">Products</a>
+
+                <div class="footer-links">
+                    <a href="Products.html">Shop</a>
                     <a href="About.html">About</a>
                     <a href="Contact.html">Contact</a>
                 </div>
             </div>
         </footer>
-        <script src = 'ContactScript.js'></script>
+        <script>
+            document.getElementById("contactForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                const firstName = document.getElementById("firstName").value;
+                const lastName = document.getElementById("lastName").value;
+                const email = document.getElementById("email").value;
+                const subject = document.getElementById("subject").value || "New message from Leafy Nibbles site";
+                const message = document.getElementById("message").value;
+
+                const fullName = `${firstName} ${lastName}`.trim();
+                const body = encodeURIComponent(
+                    `Name: ${fullName}\nEmail: ${email}\n\n${message}`
+                );
+
+                // Replace with your actual business email
+                const mailtoLink = `mailto:kaverymuthanna@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+                window.location.href = mailtoLink;
+            });
+        </script>
     </body>
 </html>

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #ECEBDF!important;
+    background-color: #F8F7EF!important;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -148,117 +148,207 @@ body {
         font-size: 1.5rem;
     }
 }
-/* General Form Styles */
-.flexbox {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-    background-color: transparent !important;
-    padding: 4rem 2rem;
-    font-family: 'Quicksand', sans-serif;
-}
-
-/* Contact Info Section */
-.ContactInfo {
+.Blog {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     gap: 1rem;
-    padding-left: 2rem;
-    color: #2D3A27;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #F8F7EF;
+    text-align: center;
 }
 
-.ContactInfo h1 {
+.title > h1 {
     font-family: 'Quicksand';
-    font-weight: bold;
-    font-size: 2.5rem;
+    font-weight: 600;
+    font-size: 4rem;
     color: #2D3A27;
 }
 
-.ContactInfo .heading {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #7F886B;
-}
-
-.ContactInfo p {
-    font-size: 1rem;
+.Blog > div > p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
     color: #3E4735;
 }
 
-.ContactInfo a i {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    color: #7F886B;
-    transition: color 0.3s ease;
-}
-
-.ContactInfo a i:hover {
-    color: #198754;
-}
-
-/* Contact Form Section */
-.container {
-    max-width: 500px;
-    background-color: transparent!important;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    color: #2D3A27;
-}
-
-/* Labels */
-.container label {
-    color: #7F886B;
-    display: block;
-    margin-top: 1rem;
-    margin-bottom: 0.25rem;
-}
-
-/* Inputs and Textarea */
-.container input,
-.container textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    background-color: white;
-    font-family: 'Quicksand';
-}
-
-.name-fields {
-    display: flex;
-    gap: 1rem;
-}
-
-.name-fields input {
-    flex: 1;
-}
-
-/* Button Styling */
-.container button {
-    width: 100%;
-    font-size: 1rem;
+.highlight {
+    color: #6B8E23; /* olive green tone */
     font-weight: 600;
-    padding: 0.75rem;
-    border: none;
-    margin-top: 2rem;
-    cursor: pointer;
-    background-color: #6B8E23;
-    color: white !important;
-    font-family: "Quicksand", sans-serif;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    border-radius:0.75rem !important;
-    display: inline-block;
-    text-decoration: none;
 }
 
-.container button:hover {
-    background-color: #5E7B1E;
-    transform: translateY(-2px);
-    color: white !important;
+.BlogCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-content: center;
+    padding-top: 1rem;
+    width: 100%;
 }
+
+.card {
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background-color: transparent !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    cursor: pointer;
+    border-color: transparent !important;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.02);
+}
+
+.card p {
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: #2D3A27;
+    padding: 0 0.5rem 0.75rem;
+}
+.Blog1{
+    display:flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.Blog1>h1{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: justify;
+    width:80rem;
+    line-height: 1.6;
+}
+.Blog1 > p {
+    font-family: 'Quicksand';
+    font-size: 1.4rem;
+    text-align: justify;
+    width:80rem;
+    line-height: 1.6;
+    margin: 0%;
+}
+
+.Blog1 > img{
+    width: 37rem;
+    border-radius: 0.75rem;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+}
+.Blog1>h5{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: justify;
+    width:80rem;
+    margin: 0%;
+}
+.Blog1 > ul {
+    width: 80rem;
+    font-family: 'Quicksand';
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 2.5rem; 
+}
+
+.Blog1 > ul > li {
+    width: 80rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.Blog1>div{
+    width:80rem;
+    background-color: #ECEBDF;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.Blog1>div>h6{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: justify;
+    width:80rem;
+    margin: 0%;
+}
+
+.Blog1 >div> p {
+    font-family: 'Quicksand';
+    font-size: 1.3rem;
+    text-align: justify;
+    width:70rem;
+    line-height: 1.6;
+    margin: 0%;
+}
+
+.Blog1>p>a {
+    color: #6B8E23;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 700;
+}
+
+.Blog1>p>a:hover {
+    color: #5E7B1E;
+}
+
+.arrow_controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Push everything to the right */
+    align-items: center;       /* Align vertically */
+    gap: 0.5rem;
+    padding-right: 8rem;          /* optional: spacing from above content */
+}
+
+.arrow_controls > p {
+    font-family: 'Quicksand';
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: right;
+}
+
+.arrow_controls > a {
+    width: max-content;
+    height: max-content;
+}
+
+.scroll-arrow {
+    height: 3rem; /* or set a fixed height if you want */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.scroll-arrow:hover {
+    transform: scale(1.1);
+}
+
+
 
 
 
@@ -324,5 +414,3 @@ footer {
 .footer-links a:hover {
     color: #198754;
 }
-
-
