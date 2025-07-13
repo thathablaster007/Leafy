@@ -1,0 +1,381 @@
+* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F7EF;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Sticky Navbar */
+.NavBar {
+    position: relative;
+    top: 0;
+    z-index: 999;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 0 4rem;
+    background-color: #F8F7EF;
+    min-height: 9rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeInDown 0.5s ease forwards;
+}
+
+/* Left section: About, Blog, Contact */
+.nav-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Center: Logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 8rem;
+    transition: transform 0.4s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.14);
+}
+
+/* Right section: Icons + Shop */
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Nav Links */
+.nav-left a {
+    font-size: 1.00rem;
+    color: #2B2B2B;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-left a:hover {
+    color: #6B8E23;
+}
+
+/* Social Icons */
+.nav-right i {
+    font-size: 1.75rem;
+    color: #2B2B2B;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-right i:hover {
+    color: #6B8E23;
+    transform: scale(1.1);
+}
+
+.nav-right a {
+    text-decoration: none;
+}
+
+/* Shop Button */
+.shop-btn {
+    background-color: #6B8E23;
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius:0.50rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.shop-btn:hover {
+    background-color: #5E7B1E;
+    transform: translateY(-2px);
+    color: white !important;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .NavBar {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .nav-left, .nav-right, .logo {
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .shop-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .nav-left a {
+        font-size: 1rem;
+    }
+
+    .nav-right i {
+        font-size: 1.5rem;
+    }
+}
+.hero-full {
+  background-image: url("Background/image_2.jpg"); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "Quicksand";
+  z-index: 0;
+}
+.hero-full::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: -1;
+}
+
+.hero-overlay {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay h1 {
+  font-family: 'Quicksand';
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #F8F7EF;
+}
+
+.hero-overlay p {
+  font-size: 2rem;
+  color: #F8F7EF;
+  margin-bottom: 2rem;
+  width: 65%;
+}
+
+
+.values {
+  text-align: center;
+  background-color: #ECEBDF!important; /* match your site tone */
+  padding: 4rem 2rem;
+  font-family: "Quicksand";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:1.5rem;
+}
+
+.subheading {
+  font-family:'Quicksand';
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #7F886B;
+}
+
+.mainheading {
+  font-family: "Quicksand";
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.values-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 4rem;
+}
+
+.value-card {
+  max-width: 30rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-card img {
+  width: 8rem;
+  padding: 1rem;
+  object-fit: contain;
+}
+
+.value-card h2 {
+  font-weight: 500;
+  font-family: 'Quicksand';
+}
+
+.value-card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  width: 65%;
+  text-align: center;
+}
+
+.About{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    padding: 4rem 0.1rem;
+    background-color: #F8F7EF!important;
+}
+.About>p{
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: justify;
+    width: 75%;
+    line-height: 1.8;
+}
+.difference {
+  background-color: #F8F7EF;
+  font-family: 'Quicksand';
+  text-align: justify;
+  color: #2f2f2f;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap:1.0rem;
+}
+
+.diff-title {
+  font-family: 'Quicksand';
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+
+.static-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 25%;
+}
+
+.static-item {
+  background-color: transparent !important;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+  gap: 0.75rem;
+}
+
+.static-item .plus {
+  font-size: 1.2rem;
+  color: #6B8E23;
+  margin: 0;
+}
+.static-item>p{
+    margin: 0;
+}
+
+
+footer {
+    background-color: #F8F7EF;
+    padding: 3rem 2rem;
+    font-family: "Quicksand", sans-serif;
+    color: #3E4735;
+}
+
+.Footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.social-icons a {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: #7F886B;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #198754; /* match navbar hover green */
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.FooterImg {
+    height: 8rem;
+    transition: transform 0.4s ease;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #7F886B;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #198754;
+}

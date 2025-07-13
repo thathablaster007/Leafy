@@ -1,0 +1,222 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F7EF;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Sticky Navbar */
+.NavBar {
+    position: relative;
+    top: 0;
+    z-index: 999;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 0 4rem;
+    background-color: #F8F7EF;
+    min-height: 9rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeInDown 0.5s ease forwards;
+}
+
+/* Left section: About, Blog, Contact */
+.nav-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Center: Logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 8rem;
+    transition: transform 0.4s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.14);
+}
+
+/* Right section: Icons + Shop */
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Nav Links */
+.nav-left a {
+    font-size: 1.00rem;
+    color: #2B2B2B;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-left a:hover {
+    color: #6B8E23;
+}
+
+/* Social Icons */
+.nav-right i {
+    font-size: 1.75rem;
+    color: #2B2B2B;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-right i:hover {
+    color: #6B8E23;
+    transform: scale(1.1);
+}
+
+.nav-right a {
+    text-decoration: none;
+}
+
+/* Shop Button */
+.shop-btn {
+    background-color: #6B8E23;
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius:0.50rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.shop-btn:hover {
+    background-color: #5E7B1E;
+    transform: translateY(-2px);
+    color: white !important;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .NavBar {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .nav-left, .nav-right, .logo {
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .shop-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .nav-left a {
+        font-size: 1rem;
+    }
+
+    .nav-right i {
+        font-size: 1.5rem;
+    }
+}
+
+
+.copywrite{
+    flex:0.5;
+    text-align: center;
+    position: relative;
+    top: 60px;
+}
+
+footer {
+    background-color: #F8F7EF;
+    padding: 3rem 2rem;
+    font-family: "Quicksand", sans-serif;
+    color: #3E4735;
+}
+
+.Footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.social-icons a {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: #7F886B;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #198754; /* match navbar hover green */
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.FooterImg {
+    height: 8rem;
+    transition: transform 0.4s ease;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #7F886B;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #198754;
+}

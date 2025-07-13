@@ -155,7 +155,7 @@ body {
     gap: 1rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background-color: #F8F7EF;
+    background-color: #ECEBDF;
     text-align: center;
 }
 
@@ -226,7 +226,7 @@ body {
 .Blog1{
     display:flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     padding-top: 5rem;
     padding-bottom: 4rem;
     align-items: center;
@@ -250,7 +250,7 @@ body {
 }
 
 .Blog1 > img{
-    width: 37rem;
+    width: 25rem;
     border-radius: 0.75rem;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -287,6 +287,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 2rem;
+    border-radius: 0.75rem;
 }
 .Blog1>div>h6{
     font-family: 'Quicksand';
@@ -323,7 +324,8 @@ body {
     justify-content: flex-end; /* Push everything to the right */
     align-items: center;       /* Align vertically */
     gap: 0.5rem;
-    padding-right: 8rem;          /* optional: spacing from above content */
+    padding-right: 8rem;
+    padding-bottom: 5rem;          /* optional: spacing from above content */
 }
 
 .arrow_controls > p {
@@ -348,8 +350,29 @@ body {
     transform: scale(1.1);
 }
 
+.Blog2{
+    background-color: #ECEBDF!important;
+}
 
+.Blog_line {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 4rem 2.75rem;
+}
 
+.Blog_line > img {
+    width: 15rem;
+    height: auto;
+    border-radius: 0.75rem;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
 
 
 footer {
