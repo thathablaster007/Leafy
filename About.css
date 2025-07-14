@@ -381,3 +381,91 @@ footer {
 .footer-links a:hover {
     color: #198754;
 }
+
+@media (max-width: 768px) {
+
+  /* Hero Section */
+  .hero-full {
+    height: auto;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+  /* About Section */
+  .About {
+    padding: 2rem 1rem;
+  }
+
+  .About > p {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .difference {
+    width: 90%;
+  }
+
+  .diff-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .static-accordion {
+    width: 100%;
+  }
+
+  .static-item {
+    font-size: 1rem;
+  }
+
+  /* Values Section */
+  .values-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .value-card {
+    max-width: 100%;
+    width: 90%;
+  }
+
+  .value-card img {
+    width: 6rem;
+  }
+
+  .value-card p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .Footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .footer-left {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .FooterImg {
+    height: 5rem;
+  }
+}
+

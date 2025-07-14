@@ -255,6 +255,33 @@ body {
 .Nine{
     background-image: url("Shop/Broccoli.jpg");
 }
+.Ten{
+    background-image: url("Shop/PakChoi.jpg");
+}
+.Eleven{
+    background-image: url("Shop/Chia.jpg");
+}
+.Twelve{
+    background-image: url("Shop/Cabbage_Green.jpg");
+}
+.Thirteen{
+    background-image: url("Shop/Cabbage_Red.jpg");
+}
+.Fourteen{
+    background-image: url("Shop/Kale_Green.jpg");
+}
+.Fifteen{
+    background-image: url("Shop/Rocket_Arugulla.jpg");
+}
+.Sixteen{
+    background-image: url("Shop/Rosella.jpg");
+}
+.Seventeen{
+    background-image: url("Shop/Clover.jpg");
+}
+.Eighteen{
+    background-image: url("Shop/Mixed.jpg");
+}
 
 .Products{
     display: grid;
