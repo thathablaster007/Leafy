@@ -84,7 +84,7 @@ body {
 }
 
 .nav-right a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 /* Shop Button */

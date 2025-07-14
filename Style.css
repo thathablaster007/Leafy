@@ -85,7 +85,7 @@ body {
 }
 
 .nav-right a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 /* Shop Button */
@@ -163,6 +163,7 @@ body {
     font-weight: 500;
     font-size: 420%;
     color: #F8F7EF;
+    text-align: center;
 }
 
 .Paragraph{
@@ -548,7 +549,8 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    gap:30px;
+    gap:1rem;
+    flex-wrap: wrap;
 }
 
 .icons_line>div>div{

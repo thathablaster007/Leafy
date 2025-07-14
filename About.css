@@ -85,7 +85,7 @@ body {
 }
 
 .nav-right a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 /* Shop Button */
@@ -150,7 +150,7 @@ body {
     }
 }
 .hero-full {
-  background-image: url("Background/image_2.jpg"); /* Replace with your image */
+  background-image: url("Background/about.jpg"); /* Replace with your image */
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -203,6 +203,7 @@ body {
   justify-content: center;
   align-items: center;
   gap:1.5rem;
+  flex-wrap: nowrap;
 }
 
 .subheading {
@@ -232,6 +233,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .value-card img {
