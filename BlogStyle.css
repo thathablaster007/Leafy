@@ -542,5 +542,15 @@ footer {
   .scroll-arrow {
     height: 2.5rem;
   }
+  /* Blog Line Images */
+  .Blog_line {
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .Blog_line > img {
+    width: 45%;
+  }
 
 }
