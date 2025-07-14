@@ -468,4 +468,71 @@ footer {
     height: 5rem;
   }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Hero Section */
+  .hero-overlay h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+
+  /* About Section */
+  .About > p {
+    width: 85%;
+    font-size: 1.1rem;
+  }
+
+  .difference {
+    width: 85%;
+  }
+
+  .diff-title {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+
+  .static-accordion {
+    width: 50%;
+  }
+
+  /* Values Section */
+  .values-container {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .value-card {
+    max-width: 80%;
+  }
+
+  .value-card img {
+    width: 7rem;
+  }
+
+  .value-card p {
+    width: 90%;
+  }
+
+  /* Footer */
+  .Footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .FooterImg {
+    height: 6rem;
+  }
+}
+
+
 

@@ -389,6 +389,88 @@ footer {
     font-size: 0.9rem;
   }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Adjust NavBar Padding */
+  .NavBar {
+    padding: 1.5rem 2rem;
+  }
+
+  .logo img {
+    height: 6rem;
+  }
+
+  /* Nav font and icon sizes */
+  .nav-left a,
+  .nav-right i {
+    font-size: 1rem;
+  }
+
+  .shop-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  /* Flexbox Section */
+  .flexbox {
+    grid-template-columns: 1fr;
+    padding: 3rem 2rem;
+    gap: 2.5rem;
+  }
+
+  .ContactInfo {
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ContactInfo h1 {
+    font-size: 2.3rem;
+  }
+
+  .ContactInfo .heading {
+    font-size: 1.2rem;
+  }
+
+  .ContactInfo p {
+    font-size: 1.05rem;
+  }
+
+  .ContactInfo a i {
+    font-size: 1.4rem;
+  }
+
+  /* Form container */
+  .container {
+    max-width: 600px;
+    padding: 2rem;
+  }
+
+  .name-fields {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  /* Footer */
+  .Footer {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .FooterImg {
+    height: 6rem;
+  }
+
+  .footer-left {
+    font-size: 1rem;
+  }
+}
+
 
 
 
