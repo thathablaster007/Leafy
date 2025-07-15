@@ -88,26 +88,37 @@
                 </div>
             </div>
         </footer>
-        <script>
+        <script type="module">
+            import emailjs from 'https://unpkg.com/@emailjs/browser@4.3.1/es/index.js';
+            emailjs.init('0oAwXYHLHepcLp7WU');
+
             document.getElementById("contactForm").addEventListener("submit", function(e) {
                 e.preventDefault();
 
                 const firstName = document.getElementById("firstName").value;
                 const lastName = document.getElementById("lastName").value;
+                const fullName = `${firstName} ${lastName}`.trim();
                 const email = document.getElementById("email").value;
                 const subject = document.getElementById("subject").value || "New message from Leafy Nibbles site";
                 const message = document.getElementById("message").value;
 
-                const fullName = `${firstName} ${lastName}`.trim();
-                const body = encodeURIComponent(
-                    `Name: ${fullName}\nEmail: ${email}\n\n${message}`
-                );
+                const templateParams = {
+                from_name: fullName,
+                from_email: email,
+                subject: subject,
+                message: message
+                };
 
-                // Replace with your actual business email
-                const mailtoLink = `mailto:kaverymuthanna@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-
-                window.location.href = mailtoLink;
+                emailjs.send('service_prqr2v7', 'template_pqus4ei', templateParams)
+                .then((response) => {
+                    document.getElementById("contactForm").reset();
+                }, (error) => {
+                    alert("Oops! Something went wrong.\n" + JSON.stringify(error));
+                });
             });
         </script>
+
     </body>
 </html>
+
+
